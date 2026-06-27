@@ -433,7 +433,7 @@ function outsideClose(e){if(e.target===document.getElementById('overlay'))closeM
 function openSleep(d,type){
   const k=type==='down'?`sd_${d}`:`su_${d}`;const v=D[k]||'';
   const lbl=type==='down'?'время засыпания':'время подъёма';
-  openModal(lbl,`${MO[mo]}, ${d}`,`<div class="m-lbl">время (чч:мм)</div><input class="m-input" id="inp" type="time" value="${v}">`,{t:'sleep',k},!!v);
+  openModal(lbl,`${MO[mo]}, ${d}`,`<div class="m-lbl">время (чч:мм)</div><input class="m-input" id="inp" type="text" value="${v}" placeholder="23:30">`,{t:'sleep',k},!!v);
 }
 function openFood(d){
   const kcal=D[`kcal_${d}`]||'';
