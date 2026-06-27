@@ -103,7 +103,7 @@ body{
 /* MODAL */
 .overlay{position:fixed;inset:0;background:rgba(58,42,40,0.4);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:100;opacity:0;pointer-events:none;transition:opacity .2s;}
 .overlay.on{opacity:1;pointer-events:all;}
-.modal{background:var(--s1);border:2px solid var(--b1);border-radius:20px;padding:24px;width:340px;max-width:92vw;transform:translateY(8px) rotate(-0.5deg);transition:transform .2s;box-shadow:0 8px 32px rgba(58,42,40,0.12);position:relative;}
+.modal{background:var(--s1);border:2px solid var(--b1);border-radius:20px;padding:24px;width:340px;max-width:92vw;overflow:hidden;transform:translateY(8px) rotate(-0.5deg);transition:transform .2s;box-shadow:0 8px 32px rgba(58,42,40,0.12);position:relative;}
 .modal::before{content:'✦';position:absolute;top:-10px;right:20px;font-size:18px;color:var(--pink);background:var(--s1);padding:0 4px;}
 .overlay.on .modal{transform:translateY(0) rotate(-0.5deg);}
 .m-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;margin-bottom:2px;color:var(--t1);}
